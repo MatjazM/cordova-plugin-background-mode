@@ -114,6 +114,8 @@
     locationManager.activityType = CLActivityTypeFitness;
 #endif
 
+    locationManager.pausesLocationUpdatesAutomatically = NO;
+
     // Empfängt nur Nachrichten, wenn sich die Position um 1km geändert hat
     locationManager.distanceFilter = 1000;
     // Startet das Aktualisieren des Standpunktes
